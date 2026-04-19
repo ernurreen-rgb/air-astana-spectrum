@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Air Astana — Before You Fly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="phone">
+    <!-- App header -->
+    <header class="app-header">
+      <button class="back-btn" aria-label="Back">
+        <svg width="12" height="20" viewBox="0 0 12 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="10 2 2 10 10 18"/>
+        </svg>
+      </button>
+      <div class="user-info">
+        <div class="user-name">Hello, Yernur A.</div>
+        <div class="user-points">0 Nomad Points</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Progress stepper -->
+      <nav class="stepper" aria-label="Booking progress">
+        <div class="step done" data-step="1">
+          <div class="step-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step done" data-step="2">
+          <div class="step-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step active" data-step="3">
+          <div class="step-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 9V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2"/>
+              <path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0z"/>
+              <path d="M6 19v2"/>
+              <path d="M18 19v2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <div class="step-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <polyline points="9 15 11 17 15 13"/>
+            </svg>
+          </div>
+        </div>
+        <div class="step" data-step="5">
+          <div class="step-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="2"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="stepper-progress"></div>
+      </nav>
+
+      <!-- Route card -->
+      <section class="route-card">
+        <div class="route">
+          <div class="route-line">
+            <span class="city">Almaty <span class="code">(ALA)</span></span>
+            <svg class="route-arrow" width="18" height="14" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="2" y1="7" x2="22" y2="7"/>
+              <polyline points="16 2 22 7 16 12"/>
+            </svg>
+            <span class="city">Astana <span class="code">(NQZ)</span></span>
+          </div>
+          <div class="route-meta"><strong>30 Apr 2026</strong>, 1 passenger(s)</div>
+        </div>
+        <button class="edit-btn" aria-label="Edit trip">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"/>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+          </svg>
+        </button>
+      </section>
+
+      <section class="journey-flow" aria-label="Passenger journey">
+        <div class="journey-step complete">
+          <span class="journey-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8"/>
+              <path d="M7 20h10"/>
+              <path d="M9 16h6"/>
+            </svg>
+          </span>
+          <span>Flight</span>
+        </div>
+        <div class="journey-step active">
+          <span class="journey-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2c-4 4-8 8-8 13a8 8 0 0 0 16 0c0-5-4-9-8-13z"/>
+            </svg>
+          </span>
+          <span>Fly Green</span>
+        </div>
+        <div class="journey-step">
+          <span class="journey-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <polyline points="9 15 11 17 15 13"/>
+            </svg>
+          </span>
+          <span>Receipt</span>
+        </div>
+      </section>
+
+      <h1 class="section-title">Before You Fly</h1>
+
+      <!-- Select Seat card -->
+      <article class="product-card">
+        <div class="product-image seat-image">
+          <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="seatGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#9aa0a8"/>
+                <stop offset="100%" stop-color="#6c737c"/>
+              </linearGradient>
+              <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#c8ccd1"/>
+                <stop offset="100%" stop-color="#8a8f95"/>
+              </linearGradient>
+            </defs>
+            <!-- Headrest pillow -->
+            <rect x="70" y="22" width="60" height="22" rx="4" fill="#f2f2f2" stroke="#d5d5d5"/>
+            <text x="100" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#b8925a" font-weight="700">MyStopover</text>
+            <!-- Seat back -->
+            <path d="M55 40 Q55 30 70 30 L130 30 Q145 30 145 40 L148 140 Q148 150 138 150 L62 150 Q52 150 52 140 Z" fill="url(#seatGrad)"/>
+            <!-- Seat cushion -->
+            <path d="M48 135 L152 135 Q158 135 158 142 L158 172 Q158 178 152 178 L48 178 Q42 178 42 172 L42 142 Q42 135 48 135 Z" fill="url(#seatGrad)"/>
+            <!-- Arm rests -->
+            <rect x="34" y="140" width="14" height="52" rx="4" fill="#7d838a"/>
+            <rect x="152" y="140" width="14" height="52" rx="4" fill="#7d838a"/>
+            <!-- Base / legs -->
+            <rect x="70" y="178" width="60" height="6" rx="2" fill="#a8adb3"/>
+            <polygon points="80,184 120,184 125,205 75,205" fill="url(#metalGrad)"/>
+            <rect x="88" y="195" width="24" height="8" rx="1.5" fill="#3a3f46"/>
+          </svg>
+        </div>
+        <div class="product-body">
+          <div class="product-header">
+            <span class="check-badge" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            <h2>Select Seat</h2>
+          </div>
+          <p class="product-desc">Comfort, space, and the view you prefer</p>
+          <button class="ghost-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+            CHANGE
+          </button>
+          <div class="price-row">
+            Total Seat Price <strong>Free</strong>
+          </div>
+        </div>
+      </article>
+
+      <!-- ESG / Fly Green card -->
+      <article class="product-card esg-card">
+        <!-- Mini forest as hero -->
+        <div class="mini-forest hero">
+          <div class="mini-forest-label">
+            <span>Your Nomad Forest</span>
+            <span class="plant-label" id="plantLabel">Toggle Fly Green to plant a seed</span>
+          </div>
+          <svg id="miniForestSvg" class="mini-forest-svg" viewBox="-92 -62 184 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="grassGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#6fbd55"/>
+                <stop offset="100%" stop-color="#4d9b3f"/>
+              </linearGradient>
+              <linearGradient id="dirtLeftGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7a4e2e"/>
+                <stop offset="100%" stop-color="#4a2f1c"/>
+              </linearGradient>
+              <linearGradient id="dirtRightGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#664024"/>
+                <stop offset="100%" stop-color="#3a2414"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="product-body">
+          <div class="product-header">
+            <span class="check-badge esg-badge" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c-4 4-8 8-8 13a8 8 0 0 0 16 0c0-5-4-9-8-13z"/>
+              </svg>
+            </span>
+            <h2>Fly Green</h2>
+            <span class="esg-pill">NEW</span>
+          </div>
+          <p class="product-desc">Offset this trip, earn Nomad Points, and grow your Nomad Forest</p>
+
+          <div class="esg-stats">
+            <div class="esg-stat">
+              <span>Your flight</span>
+              <strong id="flightFootprint">~210 kg CO₂</strong>
+            </div>
+            <div class="esg-stat">
+              <span>Selected impact</span>
+              <strong id="impactValue">100% offset</strong>
+            </div>
+          </div>
+
+          <div class="esg-tiers" role="radiogroup" aria-label="Contribution tier">
+            <button class="esg-tier" role="radio" aria-checked="false" data-tier="light" data-amount="500" data-points="50" data-co2="63" data-offset="30" data-impact="30% offset" data-mechanic="Offsets 30% of the estimated trip footprint through certified climate projects." data-project="Verified offset" data-plant="Saxaul tree">
+              <div class="esg-tier-name">Light</div>
+              <div class="esg-tier-amount">500 KZT</div>
+              <div class="esg-tier-meta">30% offset<br/>+50 pts</div>
+            </button>
+            <button class="esg-tier selected" role="radio" aria-checked="true" data-tier="balance" data-amount="1500" data-points="150" data-co2="210" data-offset="100" data-impact="100% offset" data-mechanic="Offsets the full estimated CO₂ footprint of this passenger on the selected flight." data-project="Gold Standard offset" data-plant="Malus sieversii">
+              <div class="esg-tier-name">Balance</div>
+              <div class="esg-tier-amount">1,500 KZT</div>
+              <div class="esg-tier-meta">100% offset<br/>+150 pts</div>
+            </button>
+            <button class="esg-tier" role="radio" aria-checked="false" data-tier="green-plus" data-amount="3500" data-points="300" data-co2="420" data-offset="200" data-impact="SAF boost" data-mechanic="Doubles the climate contribution and allocates part of the amount to SAF-linked partners." data-project="Offset + SAF partner" data-plant="Schrenk spruce">
+              <div class="esg-tier-name">Green+</div>
+              <div class="esg-tier-amount">3,500 KZT</div>
+              <div class="esg-tier-meta">SAF boost<br/>+300 pts</div>
+            </button>
+          </div>
+
+          <div class="esg-mechanic" id="esgMechanic">
+            <div>
+              <span class="eyebrow">Mechanic</span>
+              <strong id="mechanicTitle">100% offset</strong>
+            </div>
+            <p id="mechanicCopy">Offsets the full estimated CO₂ footprint of this passenger on the selected flight.</p>
+          </div>
+
+          <div class="esg-pilot">
+            <div>
+              <span>Touchpoint</span>
+              <strong>Before You Fly</strong>
+            </div>
+            <div>
+              <span>Receipt</span>
+              <strong>Booking + Nomad Club</strong>
+            </div>
+          </div>
+
+          <label class="esg-toggle">
+            <input type="checkbox" id="esgToggle" checked />
+            <span class="esg-switch"><span class="esg-switch-dot"></span></span>
+            <span class="esg-toggle-label">Add to booking</span>
+          </label>
+
+          <div class="esg-receipt" id="esgReceipt" aria-live="polite">
+            <span class="receipt-mark" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </span>
+            <div>
+              <strong id="receiptTitle">Balance added to booking</strong>
+              <span id="receiptMeta">~210 kg CO₂ booked · +150 pts · Malus sieversii seed</span>
+            </div>
+          </div>
+
+          <div class="esg-note" id="projectNote">
+            Verified via Gold Standard offset and SAF partner records.
+          </div>
+
+          <a href="forest.html" class="view-forest-btn" id="viewForestBtn">
+            View full forest
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Extra Bags card -->
+      <article class="product-card">
+        <div class="product-image bag-image">
+          <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="bagGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2b3144"/>
+                <stop offset="100%" stop-color="#0f1424"/>
+              </linearGradient>
+            </defs>
+            <!-- Handle -->
+            <rect x="92" y="20" width="16" height="42" rx="3" fill="#3a3f46"/>
+            <rect x="80" y="52" width="40" height="6" rx="2" fill="#2a2f36"/>
+            <!-- Body -->
+            <rect x="50" y="58" width="100" height="140" rx="10" fill="url(#bagGrad)"/>
+            <!-- Stripes -->
+            <rect x="50" y="100" width="100" height="4" fill="#ffffff" opacity="0.08"/>
+            <rect x="50" y="150" width="100" height="4" fill="#ffffff" opacity="0.08"/>
+            <!-- Wheels -->
+            <circle cx="62" cy="205" r="8" fill="#1a1f2a"/>
+            <circle cx="138" cy="205" r="8" fill="#1a1f2a"/>
+          </svg>
+        </div>
+        <div class="product-body">
+          <div class="product-header">
+            <span class="check-badge outline" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+            <h2>Extra Bags</h2>
+          </div>
+          <p class="product-desc">Add checked baggage before departure</p>
+          <button class="ghost-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            ADD
+          </button>
+          <div class="price-row">From <strong>5,000 KZT</strong></div>
+        </div>
+      </article>
+
+      <div class="scroll-spacer"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <button class="total-btn" id="totalBtn" aria-expanded="false">
+        <div>
+          <div class="total-label">Total</div>
+          <div class="total-amount" id="totalFooter">42,513 KZT</div>
+        </div>
+        <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <button class="continue-btn" id="continueBtn">
+        CONTINUE
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </button>
+    </footer>
+
+    <!-- Total breakdown panel -->
+    <div class="total-panel" id="totalPanel" hidden>
+      <div class="total-row"><span>Fare</span><span>36,013 KZT</span></div>
+      <div class="total-row"><span>Taxes & fees</span><span>5,000 KZT</span></div>
+      <div class="total-row"><span>Seat</span><span>Free</span></div>
+      <div class="total-row esg-row" id="esgRow"><span>Fly Green <span id="esgTierLabel">(Balance)</span></span><span id="esgAmount">1,500 KZT</span></div>
+      <div class="total-row esg-row" id="carbonRow"><span>CO₂ offset booked</span><span id="carbonAmount">~210 kg</span></div>
+      <div class="total-row total-sum"><span>Total</span><span id="totalSum">42,513 KZT</span></div>
+      <div class="total-row esg-row" id="pointsRow"><span>Nomad Points earned</span><span id="esgPoints">+150 pts</span></div>
+    </div>
+
+    <div class="confirmation-sheet" id="confirmationSheet" hidden>
+      <div class="confirmation-card" role="dialog" aria-modal="true" aria-labelledby="confirmationTitle">
+        <button class="confirmation-close" id="closeConfirmation" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div class="confirmation-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h2 id="confirmationTitle">Fly Green is ready for payment</h2>
+        <p id="confirmationMeta">Balance will add 1,500 KZT, offset ~210 kg CO₂, and earn +150 Nomad Points.</p>
+        <div class="confirmation-route">ALA → NQZ · 30 Apr 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

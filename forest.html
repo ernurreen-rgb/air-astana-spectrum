@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f3d28" />
+  <title>Air Astana — My Forest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="forest-page">
+  <div class="phone forest-phone">
+    <!-- Header -->
+    <header class="forest-header">
+      <a href="index.html" class="forest-back" aria-label="Back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+      </a>
+      <button class="forest-title">
+        Overview
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <button class="forest-share" aria-label="Share">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6" cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Period tabs -->
+    <div class="forest-tabs" role="tablist">
+      <button class="forest-tab" data-period="day">Day</button>
+      <button class="forest-tab" data-period="week">Week</button>
+      <button class="forest-tab" data-period="month">Month</button>
+      <button class="forest-tab active" data-period="year">Year</button>
+    </div>
+
+    <!-- Year navigator -->
+    <div class="forest-year-nav">
+      <button class="year-arrow" id="yearPrev" aria-label="Previous year">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <span class="year-label" id="yearLabel">2026</span>
+      <button class="year-arrow" id="yearNext" aria-label="Next year">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Isometric forest scene -->
+    <div class="forest-scene">
+      <svg id="forestSvg" viewBox="-170 -75 340 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="grassGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6fbd55"/>
+            <stop offset="100%" stop-color="#4d9b3f"/>
+          </linearGradient>
+          <linearGradient id="dirtLeftGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#7a4e2e"/>
+            <stop offset="100%" stop-color="#4a2f1c"/>
+          </linearGradient>
+          <linearGradient id="dirtRightGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#664024"/>
+            <stop offset="100%" stop-color="#3a2414"/>
+          </linearGradient>
+          <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(255,255,200,0.25)"/>
+            <stop offset="100%" stop-color="rgba(255,255,200,0)"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Bottom stats -->
+    <div class="forest-stats">
+      <div class="stats-left">
+        <div class="stats-big" id="co2Total">0 kg</div>
+        <div class="stats-label">CO₂ offset</div>
+      </div>
+      <div class="stats-right">
+        <div class="stat-chip">
+          <span class="chip-icon saxaul-icon"></span>
+          <span class="chip-count" id="saxaulCount">0</span>
+        </div>
+        <div class="stat-chip">
+          <span class="chip-icon apple-icon"></span>
+          <span class="chip-count" id="appleCount">0</span>
+        </div>
+        <div class="stat-chip">
+          <span class="chip-icon spruce-icon"></span>
+          <span class="chip-count" id="spruceCount">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
